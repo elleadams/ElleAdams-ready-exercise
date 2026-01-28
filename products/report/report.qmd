@@ -64,6 +64,7 @@ _Provide enough background on your topic that others can understand the why and 
 
 ## Description of data and data source
 _Describe what the data is, what it contains, where it is from, etc. Eventually this might be part of a methods section._
+In exampledata2, I added columns Shoe Size (in US mens sizes, >0 or NA) and Eye Color (blue/green/brown/other, L/G/B/O/NA) and updated the codeboook accordingly with this information. 
 
 ## Questions/Hypotheses to be addressed
 _State the research questions you plan to answer with this analysis._
