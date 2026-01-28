@@ -40,8 +40,6 @@ mydata <- readRDS(data_location)
 
 
 
-
-
 # Data exploration through tables
 
 Showing a bit of code to produce and save a summary table.
