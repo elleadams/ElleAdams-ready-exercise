@@ -1,6 +1,6 @@
 ---
 title: "Example Report Template for a Data Analysis Project"
-author: "Elle Adams, Nalany Richardson"
+author: "Elle Adams, Nalany Richardson" 
 format:
   html:
     embed-resources: true 
