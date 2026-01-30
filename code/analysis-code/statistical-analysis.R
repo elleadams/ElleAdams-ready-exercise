@@ -11,7 +11,7 @@ library(here) #for data loading/saving
 
 #path to data
 #note the use of the here() package and not absolute paths
-data_location <- here::here("data","processed-data","processeddata.rds")
+data_location <- here::here("data","processed-data","processeddata2.rds")
 
 #load data. 
 mydata <- readRDS(data_location)
@@ -53,4 +53,18 @@ print(lmtable2)
 table_file2 = here("results", "tables", "resulttable2.rds")
 saveRDS(lmtable2, file = table_file2)
 
-  
+############################
+#### Third model fit
+# fit linear model using height as outcome, eye color and shoe size as predictor
+
+lmfit3 <- lm(Height ~ `Eye Color` + `Shoe Size`, mydata)  
+
+# place results from fit into a data frame with the tidy function
+lmtable3 <- broom::tidy(lmfit3)
+
+#look at fit results
+print(lmtable3)
+
+# save fit results table  
+table_file3 = here("results", "tables", "resulttable3.rds")
+saveRDS(lmtable3, file = table_file3)
